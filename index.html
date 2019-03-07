@@ -8,9 +8,20 @@
 			canvas { width: 100%; height: 100% }
 		</style>
 	</head>
-	<body><iframe width="560" height="315" 
+	<body><iframe id="miiframe" width="560" height="315" 
 		src="https://wsp.registraduria.gov.co/censo/consultar/" frameborder="0" 
 		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 		 allowfullscreen></iframe>
+
+<script>
+//
+
+var iframe = document.getElementById("miiframee");
+   var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+   console.log(innerDoc.body);
+
+</script>
+
+
 	</body>
 </html>
